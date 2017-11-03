@@ -11,12 +11,14 @@
 .java
 .local
 .mozilla
+.node-gyp
 .npm
 .npmrc
 .nvm
 .oh-my-zsh
 .pam_environment
 .pki
+.pm2
 .profile
 .ssh
 .sudo_*
