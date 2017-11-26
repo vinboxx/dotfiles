@@ -20,3 +20,8 @@ alias gd='git diff'
 get_git_branch() {
   echo `git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/\1/'`
 }
+
+# This command moves all images originally in directory "$1" into a directory hierarchy organized by year/year-month-day:
+importPhotos() {
+  echo `exiftool "-Directory<DateTimeOriginal" -d "%Y/%Y-%m-%d" $1`
+}
