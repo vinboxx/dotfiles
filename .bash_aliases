@@ -33,7 +33,9 @@ get_git_branch() {
 # Do something under Mac OS X platform
 if [ "$machine" = "Mac" ]; then
 
-  export JAVA_HOME=$(/usr/libexec/java_home)
+  if [ -d /usr/libexec/java_home ]; then
+    export JAVA_HOME=$(/usr/libexec/java_home)
+  fi
 
   alias showFiles='defaults write com.apple.finder AppleShowAllFiles YES; killall Finder /System/Library/CoreServices/Finder.app'
   alias hideFiles='defaults write com.apple.finder AppleShowAllFiles NO; killall Finder /System/Library/CoreServices/Finder.app'
