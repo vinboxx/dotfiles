@@ -40,9 +40,8 @@ if [ "$machine" = "Mac" ]; then
   alias showFiles='defaults write com.apple.finder AppleShowAllFiles YES; killall Finder /System/Library/CoreServices/Finder.app'
   alias hideFiles='defaults write com.apple.finder AppleShowAllFiles NO; killall Finder /System/Library/CoreServices/Finder.app'
 
-  # This command moves all images originally in directory "$1" into a directory hierarchy organized by year/year-month-day:
   importPhotos() {
-    echo `exiftool "-Directory<DateTimeOriginal" -d "%Y/%Y-%m-%d" $1`
+    echo `~/dotfiles/scripts/importPhotos.sh`
   }
 
   # Kill specific process with port number
