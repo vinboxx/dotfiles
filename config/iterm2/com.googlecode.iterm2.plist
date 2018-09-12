@@ -278,7 +278,7 @@
 	gAKACoAN0xAJChEVGVdOUy5rZXlzoxITFIADgASABaMWFxiABoAHgAiACVpJZGVudGlm
 	aWVyVVdpZHRoVkhpZGRlblEwI0BowAAAAAAACNIhIiMkWiRjbGFzc25hbWVYJGNsYXNz
 	ZXNcTlNEaWN0aW9uYXJ5oiMlWE5TT2JqZWN00xAJCicrGaMSExSAA4AEgAWjLC0YgAuA
-	DIAIgAlRMSNAc7Gdsi0OVtIhIjM0Xk5TTXV0YWJsZUFycmF5ozM1JVdOU0FycmF5XxAP
+	DIAIgAlRMSNAdKGdsi0OVtIhIjM0Xk5TTXV0YWJsZUFycmF5ozM1JVdOU0FycmF5XxAP
 	TlNLZXllZEFyY2hpdmVy0Tg5VUFycmF5gAEACAARABoAIwAtADIANwBGAEwAUQBcAGMA
 	ZgBoAGoAbABzAHsAfwCBAIMAhQCJAIsAjQCPAJEAnACiAKkAqwC0ALUAugDFAM4A2wDe
 	AOcA7gDyAPQA9gD4APwA/gEAAQIBBAEGAQ8BFAEjAScBLwFBAUQBSgAAAAAAAAIBAAAA
@@ -299,11 +299,11 @@
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>410 380 620 392 0 0 1440 877 </string>
 	<key>NSWindow Frame SessionsPreferences</key>
-	<string>460 260 606 469 0 0 1440 877 </string>
+	<string>593 356 606 469 0 0 1680 1027 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>-1743 293 796 473 -1920 0 1920 1057 </string>
+	<string>-1303 401 928 394 -1920 0 1920 1057 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>241 268 1058 486 0 0 1440 877 </string>
+	<string>-1875 684 1434 914 -1920 651 1920 1057 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>369 301 665 500 0 0 1440 877 </string>
 	<key>New Bookmarks</key>
@@ -1652,7 +1652,7 @@
 		</dict>
 	</dict>
 	<key>PrefsCustomFolder</key>
-	<string>/Users/weerapat/dotfiles/config/iterm2</string>
+	<string>~/dotfiles/config/iterm2</string>
 	<key>Print In Black And White</key>
 	<true/>
 	<key>QuitWhenAllWindowsClosed</key>
@@ -1668,7 +1668,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2018-06-04T10:54:53Z</date>
+	<date>2018-06-21T01:32:12Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>ShowBookmarkName</key>
@@ -1687,6 +1687,8 @@
 	<true/>
 	<key>WordCharacters</key>
 	<string>/-+\~_.</string>
+	<key>findMode_iTerm</key>
+	<integer>0</integer>
 	<key>iTerm Version</key>
 	<string>3.1.6</string>
 </dict>
