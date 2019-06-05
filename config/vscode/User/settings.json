@@ -2,7 +2,7 @@
     "breadcrumbs.enabled": false,
     "editor.formatOnPaste": true,
     "editor.hover.delay": 1000,
-    "editor.hover.sticky": false,
+    "editor.hover.sticky": true,
     "editor.multiCursorModifier": "ctrlCmd",
     "editor.renderWhitespace": "boundary",
     "editor.snippetSuggestions": "top",
@@ -14,8 +14,9 @@
         ".*rc": "jsonc"
     },
     "files.exclude": {
-        "/.git": true,
+        "**/*.js.snap": true,
         "/.DS_Store": true,
+        "/.git": true,
         "/node_modules": true,
         "/node_modules/": true
     },
@@ -46,6 +47,22 @@
     "terminal.integrated.fontFamily": "Source Code Pro for Powerline, Source Code Pro",
     "terminal.integrated.fontSize": 14,
     "typescript.npm": "/usr/local/bin/npm",
-    "workbench.colorTheme": "wild-cherry",
-    "window.zoomLevel": 0
+    "workbench.colorTheme": "Cyberpunk",
+    "window.zoomLevel": 1,
+    "eslint.autoFixOnSave": true,
+    "eslint.run": "onSave",
+    "eslint.validate": [
+        "html",
+        "css",
+        "javascript",
+        "javascriptreact",
+        {
+            "language": "vue",
+            "autoFix": true
+        },
+        {
+            "language": "vue-html",
+            "autoFix": true
+        }
+    ]
 }
