@@ -32,6 +32,8 @@
     "javascript.updateImportsOnFileMove.enabled": "always",
     "powermode.enabled": true,
     "powermode.enableShake": false,
+    "powermode.enableStatusBarComboTimer": false,
+    "powermode.enableStatusBarComboCounter": false,
     "search.exclude": {
         "**/*.map": true,
         "**/.DS_Store": true,
