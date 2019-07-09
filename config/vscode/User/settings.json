@@ -11,7 +11,8 @@
         "javascript": "javascriptreact"
     },
     "files.associations": {
-        ".*rc": "jsonc"
+        ".*rc": "jsonc",
+        "*.ts": "typescriptreact"
     },
     "files.exclude": {
         "**/*.js.snap": true,
@@ -56,6 +57,14 @@
         "css",
         "javascript",
         "javascriptreact",
+        {
+            "language": "typescript",
+            "autoFix": true
+        },
+        {
+            "language": "typescriptreact",
+            "autoFix": true
+        },
         {
             "language": "vue",
             "autoFix": true
