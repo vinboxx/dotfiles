@@ -49,6 +49,12 @@ if [ "$machine" = "Mac" ]; then
     echo "$(lsof -ti:$1 | xargs kill)"
   }
 
+  nfw() {
+    sudo /usr/libexec/ApplicationFirewall/socketfilterfw --remove $(which node) ;
+    sudo codesign --force --sign - $(which node) ;
+    sudo /usr/libexec/ApplicationFirewall/socketfilterfw --add $(which node) ;
+  }
+
 # Do something under GNU/Linux platform
 elif [ "$machine" = "Linux" ]; then
 
