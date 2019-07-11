@@ -17,9 +17,4 @@ if [ "$machine" = "Mac" ]; then
     # Disable "Press And Hold" to enable key repeat
     defaults write -g ApplePressAndHoldEnabled -bool false
 
-# Do something under GNU/Linux platform
-elif [ "$machine" = "Linux" ]; then
-
-
-
 fi
