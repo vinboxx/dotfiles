@@ -58,7 +58,7 @@ ZSH_THEME="wild-cherry"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
+plugins=(git zsh-autosuggestions zsh-syntax-highlighting zsh-z)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -100,8 +100,6 @@ if [ -f ~/.bash_aliases ]; then
 fi
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
-. ~/dotfiles/z.sh
 
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '~/google-cloud-sdk/path.zsh.inc' ]; then . '~/google-cloud-sdk/path.zsh.inc'; fi
