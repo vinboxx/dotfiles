@@ -149,6 +149,7 @@ main() {
   # Extensions
   code_install CoenraadS.bracket-pair-colorizer
   code_install dbaeumer.vscode-eslint
+  code_install eamodio.gitlens
   code_install EditorConfig.EditorConfig
   code_install formulahendry.auto-rename-tag
   code_install gerane.Theme-wild-cherry
@@ -156,7 +157,6 @@ main() {
   code_install jpoissonnier.vscode-styled-components
   code_install max-SS.cyberpunk
   code_install ms-vscode.sublime-keybindings
-  code_install ryu1kn.partial-diff
   code_install Tyriar.sort-lines
   # Finish
   on_finish
