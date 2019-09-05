@@ -1,5 +1,7 @@
 {
     "breadcrumbs.enabled": false,
+    "editor.fontFamily": "Fira Code",
+    "editor.fontLigatures": true,
     "editor.formatOnPaste": true,
     "editor.hover.delay": 1000,
     "editor.hover.sticky": true,
@@ -50,6 +52,7 @@
     "terminal.integrated.fontFamily": "Source Code Pro for Powerline, Source Code Pro",
     "terminal.integrated.fontSize": 14,
     "typescript.npm": "/usr/local/bin/npm",
+    "typescript.updateImportsOnFileMove.enabled": "always",
     "workbench.colorTheme": "Cyberpunk",
     "window.zoomLevel": 1,
     "eslint.autoFixOnSave": true,
@@ -75,5 +78,6 @@
             "language": "vue-html",
             "autoFix": true
         }
-    ]
+    ],
+    "workbench.fontAliasing": "auto",
 }
