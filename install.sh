@@ -15,3 +15,6 @@ create_or_replace_symlink $HOME/dotfiles/.zshrc $HOME/.zshrc
 create_or_replace_symlink $HOME/dotfiles/.gitconfig $HOME/.gitconfig
 
 $HOME/dotfiles/scripts/setup.sh
+$HOME/dotfiles/scripts/brew.sh
+$HOME/dotfiles/scripts/brew-cask.sh
+$HOME/dotfiles/scripts/vscode.zsh
