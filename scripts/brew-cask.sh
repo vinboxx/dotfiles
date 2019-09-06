@@ -4,12 +4,14 @@
 #     brew update && brew upgrade brew-cask && brew cleanup && brew cask cleanup`
 
 # Dev
+brew cask install docker
 brew cask install iterm2
+brew cask install postman
 brew cask install visual-studio-code
 
 # Browsers
-brew cask install google-chrome
 brew cask install firefox
+brew cask install google-chrome
 
 # Media
 brew cask install spotify
@@ -17,17 +19,14 @@ brew cask install spotify
 # Utilities
 brew cask install alfred
 brew cask install bettertouchtool
+brew cask install snagit
 
 # Chat
-brew cask install slack
 brew cask install google-chat
+brew cask install slack
 
 # Fonts
-brew tap caskroom/fonts
+brew tap homebrew/cask-fonts
 brew cask install font-fira-code
-# powerline font
-git clone https://github.com/powerline/fonts.git --depth=1
-cd fonts
-./install.sh
-cd ..
-rm -rf fonts
+brew cask install font-source-code-pro
+brew cask install font-source-code-pro-for-powerline
