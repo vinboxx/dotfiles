@@ -241,6 +241,9 @@ prompt_context() {
 }
 
 # Git
+parse_git_tag () {
+  git describe --tags --abbrev=0 2> /dev/null
+}
 prompt_git() {
   if [[ $WILDCHERRY_GIT_SHOW == false ]] then
     return
@@ -253,7 +256,7 @@ prompt_git() {
     prompt_segment $WILDCHERRY_GIT_BG $WILDCHERRY_GIT_FG
 
     if [[ $WILDCHERRY_GIT_EXTENDED == true ]] then
-      echo -n $(git_prompt_info)$(git_prompt_status)
+      echo -n $(git_prompt_info)$(git_prompt_status) $(parse_git_tag)
     else
       echo -n $(git_prompt_info)
     fi
