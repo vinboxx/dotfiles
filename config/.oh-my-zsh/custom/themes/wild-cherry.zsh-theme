@@ -242,7 +242,7 @@ prompt_context() {
 
 # Git
 parse_git_tag () {
-  git describe --tags --abbrev=0 2> /dev/null
+  git tag -l --points-at HEAD 2> /dev/null
 }
 prompt_git() {
   if [[ $WILDCHERRY_GIT_SHOW == false ]] then
