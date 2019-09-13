@@ -20,6 +20,9 @@ alias gf='echo "\r\n  → git fetch origin\r\n" && git fetch origin'
 alias gpull='echo "\r\n  → git pull origin `get_git_branch`\r\n" && git pull origin `get_git_branch`'
 alias gpush='echo "\r\n  → git push origin `get_git_branch`\r\n" && git push origin `get_git_branch`'
 alias gd='git diff'
+alias resetFilePermission='git diff -p -R --no-color \
+    | grep -E "^(diff|(old|new) mode)" --color=never  \
+    | git apply'
 
 #########################################################################
 #-------------------------  HELPER FUNCTIONS  --------------------------#
