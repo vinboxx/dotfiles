@@ -31,6 +31,13 @@
 			],
 			"description": "Log output to console"
 		},
+		"console.logFullObject": {
+			"prefix": "logfull",
+			"body": [
+				"console.log('$1', require('util').inspect($1, {showHidden: false, depth: null}))"
+			],
+			"description": "Log full object output to console"
+		},
 		"classConstructor": {
 			"prefix": "con",
 			"body": "constructor(props) {\n\tsuper(props);\n\t$0\n}\n",
