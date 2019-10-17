@@ -2,7 +2,7 @@
 My config files.
 
 ## Installation
-After installed all dependencies, run this command
+Run this command
 ```
 ~/dotfiles/install.sh
 ```
