@@ -14,7 +14,38 @@ create_or_replace_symlink $HOME/dotfiles/.bash_profile $HOME/.bash_profile
 create_or_replace_symlink $HOME/dotfiles/.zshrc $HOME/.zshrc
 create_or_replace_symlink $HOME/dotfiles/.gitconfig $HOME/.gitconfig
 
-$HOME/dotfiles/scripts/setup.sh
-$HOME/dotfiles/scripts/brew.sh
-$HOME/dotfiles/scripts/brew-cask.sh
-$HOME/dotfiles/scripts/vscode.zsh
+ROOT_DIR="$(cd "$(dirname "$0")"; pwd -P)"
+
+echo "Running sub-shells..."
+
+unameOut="$(uname -s)"
+case "${unameOut}" in
+    Linux*)     machine=Linux;;
+    Darwin*)    machine=Mac;;
+    CYGWIN*)    machine=Cygwin;;
+    MINGW*)     machine=MinGw;;
+    *)          machine="UNKNOWN:${unameOut}"
+esac
+
+# Do something under Mac OS X platform
+if [ "$machine" = "Mac" ]; then
+
+  $HOME/dotfiles/scripts/setup/brew.sh
+  $HOME/dotfiles/scripts/setup/brew-cask.sh
+  $HOME/dotfiles/scripts/setup/01-xcode.sh
+  $HOME/dotfiles/scripts/setup/02-homebrew.sh
+  $HOME/dotfiles/scripts/setup/03-zsh.sh
+  $HOME/dotfiles/scripts/setup/07-vscode.zsh
+  $HOME/dotfiles/scripts/setup/09-macos.sh
+
+fi
+
+if [ "$machine" = "Linux" ]; then
+
+  $HOME/dotfiles/scripts/setup/03-zsh.sh
+  $HOME/dotfiles/scripts/setup/07-vscode.zsh
+
+fi
+
+
+
