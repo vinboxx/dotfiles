@@ -44,6 +44,7 @@ if [ "$machine" = "Linux" ]; then
 
   $HOME/dotfiles/scripts/setup/03-zsh.sh
   $HOME/dotfiles/scripts/setup/linux/apps.sh
+  $HOME/dotfiles/scripts/setup/linux/google-chrome.sh
   $HOME/dotfiles/scripts/setup/linux/vscode.sh
 
 fi
