@@ -13,6 +13,7 @@ create_or_replace_symlink $HOME/dotfiles/.bash_aliases $HOME/.bash_aliases
 create_or_replace_symlink $HOME/dotfiles/.bash_profile $HOME/.bash_profile
 create_or_replace_symlink $HOME/dotfiles/.zshrc $HOME/.zshrc
 create_or_replace_symlink $HOME/dotfiles/.gitconfig $HOME/.gitconfig
+create_or_replace_symlink $HOME/dotfiles/config/.oh-my-zsh/custom/themes/wild-cherry.zsh-theme $HOME/.oh-my-zsh/custom/themes/wild-cherry.zsh-theme
 
 ROOT_DIR="$(cd "$(dirname "$0")"; pwd -P)"
 
@@ -42,8 +43,8 @@ fi
 
 if [ "$machine" = "Linux" ]; then
 
-  $HOME/dotfiles/scripts/setup/03-zsh.sh
   $HOME/dotfiles/scripts/setup/linux/apps.sh
+  $HOME/dotfiles/scripts/setup/linux/zsh.sh
   $HOME/dotfiles/scripts/setup/linux/google-chrome.sh
   $HOME/dotfiles/scripts/setup/linux/vscode.sh
 
