@@ -15,6 +15,7 @@ function install {
 
 # Basics
 install curl
+install zsh
 install exfat-utils
 install git
 install htop
