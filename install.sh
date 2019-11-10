@@ -43,7 +43,7 @@ fi
 if [ "$machine" = "Linux" ]; then
 
   $HOME/dotfiles/scripts/setup/03-zsh.sh
-  $HOME/dotfiles/scripts/setup/07-vscode.zsh
+  $HOME/dotfiles/scripts/setup/linux/vscode.sh
 
 fi
 
