@@ -1,4 +1,32 @@
-#!/bin/bash
+#!/usr/bin/env bash
+
+echo "=> Z Shell"
+
+
+
+if [[ ! -d "$HOME/.oh-my-zsh" ]]; then
+  echo "Installing..."
+  curl -L "http://install.ohmyz.sh" | sh
+  echo "Completed..."
+else
+  echo "Skipping..."
+fi
+
+
+echo "Configuring..."
+
+if ! grep -Fxq "$CONFIGURED_MESSAGE" "$HOME/.zshrc"
+then
+  echo "
+$CONFIGURED_MESSAGE
+if [ -f ~/.my-zshrc ]; then
+  . ~/.my-zshrc
+fi" >> "$HOME/.zshrc"
+  echo "Completed..."
+else
+  echo "Skipping..."
+fi
+
 
 function clone_plugin {
   if [ ! -d "$2" ] ; then
