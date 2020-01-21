@@ -1,5 +1,8 @@
 {
     "breadcrumbs.enabled": false,
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true
+    },
     "editor.fontFamily": "Fira Code",
     "editor.fontLigatures": true,
     "editor.formatOnPaste": true,
@@ -12,9 +15,11 @@
     "emmet.includeLanguages": {
         "javascript": "javascriptreact"
     },
+    "eslint.run": "onSave",
     "files.associations": {
         ".*rc": "jsonc",
-        "*.ts": "typescriptreact"
+        "*.ts": "typescriptreact",
+        "*.js": "typescriptreact"
     },
     "files.exclude": {
         "**/*.js.snap": true,
@@ -29,13 +34,10 @@
     },
     "files.trimTrailingWhitespace": true,
     "files.useExperimentalFileWatcher": true,
+    "gitlens.statusBar.enabled": false,
     "javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": false,
     "javascript.preferences.quoteStyle": "single",
     "javascript.updateImportsOnFileMove.enabled": "always",
-    "powermode.enabled": true,
-    "powermode.enableShake": false,
-    "powermode.enableStatusBarComboTimer": false,
-    "powermode.enableStatusBarComboCounter": false,
     "search.exclude": {
         "**/*.map": true,
         "**/.DS_Store": true,
@@ -53,31 +55,7 @@
     "terminal.integrated.fontSize": 14,
     "typescript.npm": "/usr/local/bin/npm",
     "typescript.updateImportsOnFileMove.enabled": "always",
-    "workbench.colorTheme": "Cyberpunk",
     "window.zoomLevel": 1,
-    "eslint.autoFixOnSave": true,
-    "eslint.run": "onSave",
-    "eslint.validate": [
-        "html",
-        "css",
-        "javascript",
-        "javascriptreact",
-        {
-            "language": "typescript",
-            "autoFix": true
-        },
-        {
-            "language": "typescriptreact",
-            "autoFix": true
-        },
-        {
-            "language": "vue",
-            "autoFix": true
-        },
-        {
-            "language": "vue-html",
-            "autoFix": true
-        }
-    ],
+    "workbench.colorTheme": "Cyberpunk",
     "workbench.fontAliasing": "auto",
 }
