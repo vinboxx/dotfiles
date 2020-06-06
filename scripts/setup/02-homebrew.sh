@@ -55,6 +55,7 @@ brew cask install notion
 brew cask install snagit
 brew cask install the-unarchiver
 brew cask install tunnelblick
+brew cask install WebPQuickLook
 
 # Chat
 brew cask install google-chat
