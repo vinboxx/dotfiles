@@ -36,7 +36,7 @@ brew cask install cyberduck
 brew cask install docker
 brew cask install iterm2
 brew cask install postman
-brew cask install robo-3t
+brew cask install tableplus
 brew cask install visual-studio-code
 
 # Browsers
