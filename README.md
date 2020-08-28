@@ -4,5 +4,9 @@ My config files.
 ## Installation
 Run this command
 ```
-~/dotfiles/setup.sh
+curl -o- https://raw.githubusercontent.com/vinboxx/dotfiles/master/install.sh | bash
+```
+or
+```
+wget -qO- https://raw.githubusercontent.com/vinboxx/dotfiles/master/install.sh | bash
 ```
