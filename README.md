@@ -4,5 +4,5 @@ My config files.
 ## Installation
 Run this command
 ```
-~/dotfiles/install.sh
+~/dotfiles/setup.sh
 ```
