@@ -9,6 +9,7 @@ then
   print_info "Installing..."
 
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+  ROOT_DIR="$(cd "$(dirname "$0")"; pwd -P)"
   brew bundle --file="$ROOT_DIR/core/Brewfile"
   brew cleanup && brew upgrade && brew update && brew doctor
 

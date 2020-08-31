@@ -4,8 +4,6 @@ create_or_replace_symlink $HOME/dotfiles/.bash_aliases $HOME/.bash_aliases
 create_or_replace_symlink $HOME/dotfiles/.bash_profile $HOME/.bash_profile
 create_or_replace_symlink $HOME/dotfiles/.gitconfig $HOME/.gitconfig
 
-ROOT_DIR="$(cd "$(dirname "$0")"; pwd -P)"
-
 echo "Running sub-shells..."
 
 unameOut="$(uname -s)"
