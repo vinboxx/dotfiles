@@ -1,12 +1,12 @@
 #!/usr/bin/env bash
 
+source "$HOME/dotfiles/scripts/setup/utils.sh"
+
 echo "=> Z Shell"
-
-
 
 if [[ ! -d "$HOME/.oh-my-zsh" ]]; then
   echo "Installing..."
-  curl -L "http://install.ohmyz.sh" | sh
+  sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
   echo "Completed..."
 else
   echo "Skipping..."
@@ -14,6 +14,9 @@ fi
 
 
 echo "Configuring..."
+
+create_or_replace_symlink $HOME/dotfiles/config/.oh-my-zsh/custom/themes/wild-cherry.zsh-theme $HOME/.oh-my-zsh/custom/themes/wild-cherry.zsh-theme
+create_or_replace_symlink $HOME/dotfiles/.zshrc $HOME/.zshrc
 
 if ! grep -Fxq "$CONFIGURED_MESSAGE" "$HOME/.zshrc"
 then
