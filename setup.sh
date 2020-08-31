@@ -13,6 +13,7 @@ create_or_replace_symlink $HOME/dotfiles/.bash_aliases $HOME/.bash_aliases
 create_or_replace_symlink $HOME/dotfiles/.bash_profile $HOME/.bash_profile
 create_or_replace_symlink $HOME/dotfiles/.zshrc $HOME/.zshrc
 create_or_replace_symlink $HOME/dotfiles/.gitconfig $HOME/.gitconfig
+mkdir -p $HOME/.oh-my-zsh/custom/themes
 create_or_replace_symlink $HOME/dotfiles/config/.oh-my-zsh/custom/themes/wild-cherry.zsh-theme $HOME/.oh-my-zsh/custom/themes/wild-cherry.zsh-theme
 
 ROOT_DIR="$(cd "$(dirname "$0")"; pwd -P)"

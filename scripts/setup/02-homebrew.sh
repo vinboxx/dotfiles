@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+source "utils.sh"
+
 echo "=> Homebrew"
 
 if [[ ! -f $(which brew) ]]

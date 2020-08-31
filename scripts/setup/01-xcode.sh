@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+source "utils.sh"
+
 echo "=> X Code"
 
 if ! xcode-select --print-path &> /dev/null; then

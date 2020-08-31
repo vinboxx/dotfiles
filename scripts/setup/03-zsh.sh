@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 
-echo "=> Z Shell"
+source "utils.sh"
 
+echo "=> Z Shell"
 
 print_info "Installing..."
 
