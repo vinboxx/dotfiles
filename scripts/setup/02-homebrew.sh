@@ -8,7 +8,7 @@ if [[ ! -f $(which brew) ]]
 then
   print_info "Installing..."
 
-  ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
   brew bundle --file="$ROOT_DIR/core/Brewfile"
   brew cleanup && brew upgrade && brew update && brew doctor
 
