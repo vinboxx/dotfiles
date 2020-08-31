@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-source "utils.sh"
+source "$HOME/dotfiles/scripts/setup/utils.sh"
 
 echo "=> Z Shell"
 
