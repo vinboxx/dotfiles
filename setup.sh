@@ -31,8 +31,6 @@ esac
 # Do something under Mac OS X platform
 if [ "$machine" = "Mac" ]; then
 
-  $HOME/dotfiles/scripts/setup/brew.sh
-  $HOME/dotfiles/scripts/setup/brew-cask.sh
   $HOME/dotfiles/scripts/setup/01-xcode.sh
   $HOME/dotfiles/scripts/setup/02-homebrew.sh
   $HOME/dotfiles/scripts/setup/03-zsh.sh
