@@ -6,9 +6,6 @@ export LC_CTYPE="en_US.UTF-8"
 # Home brew python
 export PATH="/usr/local/opt/python/libexec/bin:$PATH"
 
-# JAVA_HOME
-export JAVA_HOME=$(/usr/libexec/java_home)
-
 if [ -d ~/.nvm ]; then
   export NVM_DIR="$HOME/.nvm"
   [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
