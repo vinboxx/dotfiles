@@ -4,9 +4,8 @@ source "$HOME/dotfiles/scripts/setup/utils.sh"
 
 echo "=> Z Shell"
 
-print_info "Installing..."
-
 if [[ ! -d "$HOME/.oh-my-zsh" ]]; then
+  print_info "Installing..."
   sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
   print_success "Completed..."
 else
