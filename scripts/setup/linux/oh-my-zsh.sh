@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 
 source "$HOME/dotfiles/scripts/setup/utils.sh"
 

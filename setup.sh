@@ -1,3 +1,5 @@
+#!/bin/bash
+
 source "$HOME/dotfiles/scripts/setup/utils.sh"
 
 create_or_replace_symlink $HOME/dotfiles/.bash_aliases $HOME/.bash_aliases
