@@ -24,6 +24,12 @@ alias gd='git diff'
 #-------------------------  HELPER FUNCTIONS  --------------------------#
 #########################################################################
 
+search() {
+    local search_string=$1
+    echo "\r\n  → Searching for '$search_string'\r\n"
+    grep -R --exclude='*.map' --exclude='*.min.*' --exclude-dir={.idea,.git,.vscode,build,coverage,dist,node_modules} $search_string .
+}
+
 # Get current git branch
 get_git_branch() {
   echo `git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/\1/'`
