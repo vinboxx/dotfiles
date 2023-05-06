@@ -35,6 +35,37 @@ get_git_branch() {
   echo `git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/\1/'`
 }
 
+gco() {
+  local branch_name=$1
+  local options=$2
+  # If branch name is "--", then use normal git checkout
+  if [ "$branch_name" = "--" ]; then
+    git checkout -- $options
+    return
+  fi
+  # Check if package-lock.json exists and dirty
+  if [ -f "package-lock.json" ] && [ -n "$(git status --porcelain package-lock.json)" ]; then
+      echo "\r\n  → package-lock.json is dirty\r\n"
+      git checkout -- package-lock.json
+      echo "\r\n  → package-lock.json has been reset\r\n"
+  fi
+
+  # Stash uncommitted changes
+  if [ -n "$(git status --porcelain)" ]; then
+      echo "\r\n  → Stashing uncommitted changes\r\n"
+      git stash
+  fi
+
+  echo "\r\n  → git checkout $1\r\n"
+  git checkout $1
+
+  # Pop stashed changes
+  if [ -n "$(git stash list)" ]; then
+      echo "\r\n  → Popping stashed changes\r\n"
+      git stash pop
+  fi
+}
+
 # Do something under Mac OS X platform
 if [ "$machine" = "Mac" ]; then
 
