@@ -58,7 +58,7 @@ ZSH_THEME="jovial"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git history-substring-search macos zsh-autosuggestions zsh-syntax-highlighting zsh-z)
+plugins=(git nvm history-substring-search macos zsh-autosuggestions zsh-syntax-highlighting zsh-z)
 
 source $ZSH/oh-my-zsh.sh
 
