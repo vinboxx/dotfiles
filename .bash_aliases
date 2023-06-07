@@ -13,7 +13,6 @@ alias gs='git status'
 alias gl='git log'
 alias ga='git add'
 alias gc='git commit'
-alias gco='git checkout'
 alias gb='git branch'
 alias gf='echo "\r\n  → git fetch origin\r\n" && git fetch origin'
 alias gpull='echo "\r\n  → git pull origin `get_git_branch`\r\n" && git pull origin `get_git_branch`'
@@ -43,6 +42,13 @@ gco() {
     git checkout -- $options
     return
   fi
+
+  # If branch name is "-b", then use normal git checkout
+  if [ "$branch_name" = "-b" ]; then
+    git checkout -b $options
+    return
+  fi
+
   # Check if package-lock.json exists and dirty
   if [ -f "package-lock.json" ] && [ -n "$(git status --porcelain package-lock.json)" ]; then
       echo "\r\n  → package-lock.json is dirty\r\n"
@@ -51,8 +57,10 @@ gco() {
   fi
 
   # Stash uncommitted changes
+  local isStashed=0
   if [ -n "$(git status --porcelain)" ]; then
       echo "\r\n  → Stashing uncommitted changes\r\n"
+      isStashed=1
       git stash
   fi
 
@@ -60,7 +68,8 @@ gco() {
   git checkout $1
 
   # Pop stashed changes
-  if [ -n "$(git stash list)" ]; then
+
+  if [ $isStashed -eq 1 ] && [ -n "$(git stash list)" ]; then
       echo "\r\n  → Popping stashed changes\r\n"
       git stash pop
   fi
