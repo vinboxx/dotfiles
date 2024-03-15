@@ -46,7 +46,7 @@ typeset -gA JOVIAL_PALETTE=(
     root "${terminfo[bold]}${FG[203]}"
 
     # current work dir path
-    path "${terminfo[bold]}${FG[228]}"
+    path "${terminfo[bold]}${FG[213]}"
 
     # git status info (dirty or clean / rebase / merge / cherry-pick)
     git "${FG[159]}"
