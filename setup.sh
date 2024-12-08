@@ -23,7 +23,6 @@ if [ "$machine" = "Mac" ]; then
   $HOME/dotfiles/scripts/setup/01-xcode.sh
   $HOME/dotfiles/scripts/setup/02-homebrew.sh
   $HOME/dotfiles/scripts/setup/03-zsh.sh
-  $HOME/dotfiles/scripts/setup/07-vscode.zsh
   $HOME/dotfiles/scripts/setup/09-macos.sh
 
 fi
@@ -31,10 +30,7 @@ fi
 if [ "$machine" = "Linux" ]; then
 
   $HOME/dotfiles/scripts/setup/linux/apps.sh
-  $HOME/dotfiles/scripts/setup/linux/nvm.sh
-  $HOME/dotfiles/scripts/setup/linux/oh-my-zsh.sh
   $HOME/dotfiles/scripts/setup/linux/google-chrome.sh
-  $HOME/dotfiles/scripts/setup/linux/vscode.sh
 
 fi
 
