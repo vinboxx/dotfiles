@@ -19,3 +19,7 @@ eval "$(mise activate zsh --shims)"
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
+
+# Starship + zsh
+# Restore the additional line after the Starship prompt on zsh
+PROMPT="${PROMPT}"$'\n'
